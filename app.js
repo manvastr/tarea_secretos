@@ -1,5 +1,7 @@
-// Configuración de la aplicación
-const API_KEY = "ghp_1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ1234";
-const DB_PASSWORD = "mi_contraseña_secreta_admin";
+// Configuración segura usando variables de entorno
+require('dotenv').config();
 
-console.log("Iniciando conexión con las credenciales...");
+const API_KEY = process.env.API_KEY;}
+const DB_PASSWORD = process.env.DB_PASSWORD;
+
+console.log("Iniciando conexión segura...");
